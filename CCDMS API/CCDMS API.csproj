@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <RootNamespace>CCDMS_API</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="CCDMS.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="CCDMS.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CCDMSServices\CCDMSServices.csproj" />
+  </ItemGroup>
+
+</Project>
