@@ -8,19 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="CCDMS.db" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.8">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Include="CCDMS.db" />
   </ItemGroup>
 
   <ItemGroup>

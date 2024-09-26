@@ -11,13 +11,14 @@ namespace CCDMSServices.ORM.Entities
     {
         [Key]
         public long Id { get; set; }
+#nullable disable
         public string CountryName { get; set; }
         public string FarmName { get; set; }
         public string CoopNumber { get; set; }
         public DateTime GrowthStartDate { get; set; }
         public long DataCollectionTime { get; set; }
         public DateTime CreatedDate { get; set; }
-        public ICollection<FileData> Data {  get; set; }
+        public ICollection<FileData> Data { get; set; }
 
 
     }

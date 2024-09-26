@@ -15,6 +15,7 @@ namespace CCDMSServices.ORM.Entities
         public long Id { get; set; }
         [ForeignKey("File")]
         public long FileId { get; set; }
+#nullable disable
         public Files File { get; set; }
         public long Hours { get; set; }
         public decimal Mean { get; set; }
